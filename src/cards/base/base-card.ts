@@ -341,7 +341,7 @@ export class BaseCardBuilder {
                 ctx.font = `700 35px '${font}'`;
             } else if (type === 'main') {
                 ctx.font = `800 48px '${font}'`;
-                text.content = text.content.toUpperCase();
+                text.content = text.content;
             }
             if (text.content.length > maxLength) {
                 text.content = text.content.slice(0, maxLength - 3) + '...';
